@@ -13,20 +13,28 @@
 <div class="box">
 
 <center>
-    <h1 class="h1">POMODORA TIMER PROJECT</h1>
+    <h1 class="h1">POMODORA TIMER</h1>
 </center>
 
 <div class="main">
 
-    <h1 id="time">25:00</h1>
+   
 
     <div class="button">
-        <button onclick="startTimer()" class="start">Start</button>
+        <button onclick="Pomodora()" class="Pomodora">Pomodora</button>
 
-        <button onclick="pauseTimer()" class="pause">Pause</button>
+        <button onclick="shortBreak()" class="ShortBreak">Short Break</button>
 
-        <button onclick="resetTimer()" class="reset">Reset</button>
+        <button onclick="LongBreak()" class="LongBreak">Long Break</button>
     </div>
+    
+         <h1 id="time">25:00</h1>
+      <div class="btn-container">
+    <button id="start">Start</button>
+
+    <button id="restart" onclick="restartTimer()">↻</button>
+</div>
+</div>
 
 </div>
 

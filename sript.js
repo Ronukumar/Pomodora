@@ -1,4 +1,5 @@
-let seconds = 1500; // 25 minutes
+let seconds = 1500;
+let defaultTime = 1500;
 let timer;
 
 function showTime() {
@@ -10,22 +11,45 @@ function showTime() {
 }
 
 function startTimer() {
+    clearInterval(timer);
+
     timer = setInterval(() => {
         if (seconds > 0) {
             seconds--;
             showTime();
+        } else {
+            clearInterval(timer);
         }
     }, 1000);
 }
 
-function pauseTimer() {
-    clearInterval(timer);
-}
-
-function resetTimer() {
+function Pomodora() {
     clearInterval(timer);
     seconds = 1500;
+    defaultTime = 1500;
     showTime();
 }
+
+function shortBreak() {
+    clearInterval(timer);
+    seconds = 300;
+    defaultTime = 300;
+    showTime();
+}
+
+function LongBreak() {
+    clearInterval(timer);
+    seconds = 900;
+    defaultTime = 900;
+    showTime();
+}
+
+function restartTimer() {
+    clearInterval(timer);
+    seconds = defaultTime;
+    showTime();
+}
+
+document.getElementById("start").addEventListener("click", startTimer);
 
 showTime();
