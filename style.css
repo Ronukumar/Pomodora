@@ -68,12 +68,13 @@ body{
 }
 
 #start{
-    padding: 10px 25px;
+    padding: 7px 25px;
     border: 0.5px solid white;
     border-radius: 25px;
     background: transparent;
     color: white;
     cursor: pointer;
+    
 }
 
 #restart{
