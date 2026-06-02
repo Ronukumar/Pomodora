@@ -30,7 +30,7 @@
     border:1px solid white;
     border-radius:25px;
     background:transparent;
-    color:white;
+    color:black;
     cursor:pointer;
 
 }
@@ -41,7 +41,7 @@
     border:1px solid white;
     border-radius:25px;
     background:transparent;
-    color:white;
+    color:black;
     cursor:pointer;
 
 }
@@ -51,7 +51,7 @@
     border:1px solid white;
     border-radius:25px;
     background:transparent;
-    color:white;
+    color:black;
     cursor:pointer;
 
 }
@@ -60,14 +60,15 @@
     border:1px solid white;
     border-radius:25px;
     background:transparent;
-    color:white;
+    color:black;
     cursor:pointer;
+    margin-top: 13vw;
 
 }
 /* TIME */
 
 #time{
-    margin-top: 3vw;
+    margin-top: 20vw;
     text-align: center;
 }
 
@@ -78,6 +79,10 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 55vw;
+    margin-bottom: 12vw;
+    
+    
 }
 .btn-container{
     display: flex;
@@ -87,6 +92,7 @@
 button:active{
     transform: scale(1.1);
     background-color: white;
+    
 }
 #restart{
     width: 40px;
@@ -100,4 +106,5 @@ button:active{
     align-items: center;
     margin-left: 2vw;
     color: white;
+    margin-top: 13vw;
 }
