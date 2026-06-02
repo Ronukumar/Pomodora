@@ -67,14 +67,16 @@ body{
     gap: 15px;
 }
 
-#start{
-    padding: 7px 25px;
-    border: 0.5px solid white;
+
+  #start{
+    padding: 10px 15px;
+    border: 1px solid white;
     border-radius: 25px;
     background: transparent;
     color: white;
     cursor: pointer;
-    
+    font-size: 12px;
+
 }
 
 #restart{
